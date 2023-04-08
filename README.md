@@ -47,13 +47,26 @@ This one restricts the instantiation of a class to one object. This is useful wh
 ### [Structural](https://github.com/its-rav/design-pattern/tree/master/structural)
 Structural patterns are focused towards how to assemble objects and classes into larger structures.  Or yet another explanation would be, they help in answering "How to build a software component?"
 #### Adapter
+a structural design pattern that allows objects with incompatible interfaces to collaborate.
+> it allows the interface of an existing class to be used as another interface. It is often used to make existing classes work with others without modifying their source code. For instance, if an application primarily interacts with XML and the newly integrated service is JSON based, an adapter can be utilized.
 #### Bridge
+A structural design pattern that lets you split a large class or a set of closely related classes into two separate hierarchies—abstraction and implementation—which can be developed independently of each other.
+> "Decouple an abstraction from its implementation so that the two can vary independently". To be specific, instead of having BlueCircle, RedCircle, YellowSquare, WhiteSquare derived from Shape, utilizing Bridge pattern, you can make Circle, Square derived from Shape that has a type Color attribute. Doing this will allow for Shape and color to be abstracted from each other, and have far more expansions of the derivatives.
 #### Composite
+A structural design pattern that lets you compose objects into tree structures and then work with these structures as if they were individual objects.
+> The Composite pattern provides you with two basic element types that share a common interface: simple leaves and complex containers. A container can be composed of both leaves and other containers. This lets you construct a nested recursive object structure that resembles a tree.
 #### Decorator
+ A structural design pattern that lets you attach new behaviors to objects by placing these objects inside special wrapper objects that contain the behaviors.
+ > Basically, a wrapper that wrap around an object that you want to change its behavior
 #### Facade
+Facade provides a simplified interface to a library, a framework, or any other complex set of classes.
+> a simple interface to the complex subsystem is a facade.
 #### Flyweight
+Flyweight lets you fit more objects into the available amount of RAM by sharing common parts of state between multiple objects instead of keeping all of the data in each object.
+> It is used to minimize memory usage or computational expenses by sharing as much as possible with similar objects. For instance, you are making a 2D shooting game where a large number of Bullet objects are involved. While it is common sense that your Bullet will have coord, color, image, vector, speed attributes, you risk overwhelming the RAM capacity of your system if your game has 1 billion or more bullets. Rather, the Flyweight design pattern can be employed to create FlyweightBullet objects that store the shared, common image attribute values across the whole application.
 #### Proxy
-
+Using the proxy pattern, a class represents the functionality of another class.
+> Decorator and Proxy have similar structures, but very different intents. Both patterns are built on the composition principle, where one object is supposed to delegate some of the work to another. The difference is that a Proxy usually manages the life cycle or the security of its service object on its own, whereas Decorators is used to add responsibilities to an object(without using inheritance).
 ### [Behavioral](https://github.com/its-rav/design-pattern/blob/master/behavioral)
 Behavioral designs are capable of identifying common communication patterns between objects and realize these patterns, or, you can just say, they take care of effective communication and the assignment of responsibilities between objects.
 
