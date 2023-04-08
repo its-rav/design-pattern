@@ -25,7 +25,10 @@ Hey, trust me bro, you might manage to do just fine as a software engineer witho
 _________________
 ## Types of design patterns
 
-### Creational
-```{include} structural/README.md
-```
-### Behavioral
+### [Structural](https://github.com/its-rav/design-pattern/tree/master/structural)
+### [Creational](https://github.com/its-rav/design-pattern/blob/master/creational)
+### [Behavioral](https://github.com/its-rav/design-pattern/blob/master/behavioral)
+
+
+## De end
+> k bye
