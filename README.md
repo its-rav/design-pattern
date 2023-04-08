@@ -43,7 +43,7 @@ A creational design pattern that lets you construct complex objects step by step
  > In plain words, creating object based on an existing object through cloning.
 #### Singleton
 This one restricts the instantiation of a class to one object. This is useful when exactly one object is needed to coordinate actions across the system.
-> The infamous singleton. Just like the name, "ton" is much very single, he like to be the one and only.
+> The infamous singleton. Just like the name, "ton" is much very single, he likes and is meant to be the one and only.
 ### [Structural](https://github.com/its-rav/design-pattern/tree/master/structural)
 Structural patterns are focused towards how to assemble objects and classes into larger structures.  Or yet another explanation would be, they help in answering "How to build a software component?"
 #### Adapter
