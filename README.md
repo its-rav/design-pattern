@@ -29,11 +29,21 @@ These are categorized by the *intent*, or *purpose*
 ### [Creational](https://github.com/its-rav/design-pattern/blob/master/creational)
 Creational patterns are focused towards how to instantiate an object or group of related objects that increase flexibility and reuse of existing code
 #### Factory Method
-#### Abstract Factory
-#### Builder
-#### Prototype
-#### Singleton
+Factory Method provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created. 
+> Creating objects by calling a (factory) method — either specified in an interface and implemented by child classes, or implemented in a base class and optionally overridden by derived classes—rather than by calling a constructor.
 
+#### Abstract Factory
+The abstract factory pattern provides a way to encapsulate a group of individual factories that have a common theme without specifying their concrete classes
+> Basically, it is a list of "standards" for factories creating objects that have a common theme, so that the products are compatible with each others
+#### Builder
+A creational design pattern that lets you construct complex objects step by step. The pattern allows you to produce different types and representations of an object using the same construction code.
+> Imagine you have to make a BobaMilkshake with various toppings and ingredients. Constructors are not suitable for this task, since there are numerous steps required to assemble the drink and countless possible combinations that need to be taken into consideration. The builder pattern can help you out with this issue by extracting the object-building code out of its own class and moving into a Builder class, such as BobaMilkshakeBuilder, which would have functions like putMilk(), putWater(), putTopping(toppingType, amount), etc
+#### Prototype
+ A creational design pattern that lets you copy existing objects without making your code dependent on their classes.
+ > In plain words, creating object based on an existing object through cloning.
+#### Singleton
+This one restricts the instantiation of a class to one object. This is useful when exactly one object is needed to coordinate actions across the system.
+> The infamous singleton. Just like the name, "ton" is much very single, he like to be the one and only.
 ### [Structural](https://github.com/its-rav/design-pattern/tree/master/structural)
 Structural patterns are focused towards how to assemble objects and classes into larger structures.  Or yet another explanation would be, they help in answering "How to build a software component?"
 #### Adapter
