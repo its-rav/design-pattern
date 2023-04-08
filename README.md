@@ -24,11 +24,52 @@ Hey, trust me bro, you might manage to do just fine as a software engineer witho
 
 _________________
 ## Types of design patterns
+These are categorized by the *intent*, or *purpose*
+
+### [Creational](https://github.com/its-rav/design-pattern/blob/master/creational)
+Creational patterns are focused towards how to instantiate an object or group of related objects that increase flexibility and reuse of existing code
+#### Factory Method
+#### Abstract Factory
+#### Builder
+#### Prototype
+#### Singleton
 
 ### [Structural](https://github.com/its-rav/design-pattern/tree/master/structural)
-### [Creational](https://github.com/its-rav/design-pattern/blob/master/creational)
+Structural patterns are focused towards how to assemble objects and classes into larger structures.  Or yet another explanation would be, they help in answering "How to build a software component?"
+#### Adapter
+#### Bridge
+#### Composite
+#### Decorator
+#### Facade
+#### Flyweight
+#### Proxy
+
 ### [Behavioral](https://github.com/its-rav/design-pattern/blob/master/behavioral)
+Behavioral designs are capable of identifying common communication patterns between objects and realize these patterns, or, you can just say, they take care of effective communication and the assignment of responsibilities between objects.
 
+#### Chain of responsibility
+#### Command
+#### Iterator
+#### Mediator
+#### Memento
+#### Observer
+#### State
+#### Strategy
+#### Template method
+#### Visitor
 
+## Warning
+- 
+> Design patterns differ by their complexity, level of detail and scale of applicability to the entire system being designed. I like the analogy to road construction: you can make an intersection safer by either installing some traffic lights or building an entire multi-level interchange with underground passages for pedestrians.
+- Kludges for a weak programming language 
+    - Developers tend to use design patterns as a workaround or "kludge" to get around the limitations of the language. Design patterns are often used to make up for the shortcomings of a "weak" programming language, allowing the developer to still create a program even if the language doesn't have the necessary tools.
+    > This practice is not only common, but institutionalized. For example, in the OO world you hear a good deal about "patterns". I wonder if these patterns are not sometimes evidence of case (c), the human compiler, at work. 
+    > When I see patterns in my programs, I consider it a sign of trouble. The shape of a program should reflect only the problem it needs to solve. Any other regularity in the code is a sign, to me at least, that I'm using abstractions that aren't powerful enough - often that I'm generating by hand the expansions of some macro that I need to write. 
+    > -- <cite> PaulGraham, which leads to the question "Are Patterns a LanguageSmell?"</cite>
+    - http://www.paulgraham.com/icad.html
+    - http://wiki.c2.com/?AreDesignPatternsMissingLanguageFeatures
+- Inefficient solutions
+    - Patterns should be applied with the context of the problem you are trying to solve, not "to the letter" => which leads to inefficient
+    - Design patterns are not a magic wand to all of your problems, do not try to force them
 ## De end
 > k bye
